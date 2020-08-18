@@ -14,7 +14,7 @@ public class Bank {
         //2. сохранение переменных
         Session session = save(token);
         //3. получить счет
-        Account account = getAccount();
+        Account account = getAccount(session);
 
         return account.getBalance();
     }
